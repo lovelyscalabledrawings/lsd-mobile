@@ -32,7 +32,7 @@ LSD.Mobile.Document = new Class({
   },
   
   setBody: function(element) {
-    var pages = Slick.search(element, "> section.page");
+    var pages = LSD.Slick.search(element, "> section.page");
     if (pages.length) pages.each(this.setPage.bind(this))
     else this.setPage(element)
   },
